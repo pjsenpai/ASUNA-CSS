@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pjsenpai/asuna-css/issues"
   },
-  "homepage": "https://github.com/pjsenpai/asuna-css#readme"
+  "homepage": "https://github.com/pjsenpai/asuna-css#readme",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
 }
