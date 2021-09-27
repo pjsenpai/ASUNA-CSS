@@ -1,10 +1,10 @@
 {
   "name": "asuna-css",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "CSS Framework based on Flexbox",
-  "main": "index.js",
+  "main": "asuna-skeleton.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "skeleton" : "sass --watch asuna-skeleton.scss css/asuna-skeleton.css"
   },
   "repository": {
     "type": "git",
