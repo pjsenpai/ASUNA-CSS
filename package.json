@@ -1,8 +1,13 @@
 {
-  "name": "asuna-css",
+  "name": "asuna-skeleton-css",
   "version": "0.1.0",
-  "description": "CSS Framework based on Flexbox",
+  "description": "A minimal version of Asuna CSS Framework based on Flexbox",
   "main": "asuna-skeleton.scss",
+  "files": [
+      "asuna-skeleton.scss",
+      "css",
+      "scss"
+  ],
   "scripts": {
     "skeleton" : "sass --watch asuna-skeleton.scss css/asuna-skeleton.css"
   },
