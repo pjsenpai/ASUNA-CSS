@@ -1,0 +1,28 @@
+{
+  "name": "asuna-skeleton-css",
+  "version": "0.1.0",
+  "description": "A minimal version of Asuna CSS Framework based on Flexbox",
+  "main": "asuna-skeleton.scss",
+  "files": [
+      "asuna-skeleton.scss",
+      "css",
+      "scss"
+  ],
+  "scripts": {
+    "skeleton" : "sass --watch asuna-skeleton.scss css/asuna-skeleton.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjsenpai/asuna-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjsenpai/asuna-css/issues"
+  },
+  "homepage": "https://github.com/pjsenpai/asuna-css#readme",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
