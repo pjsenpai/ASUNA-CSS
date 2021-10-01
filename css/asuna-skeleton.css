@@ -1,0 +1,1418 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  flex-grow: 1;
+}
+
+.container.full-screen {
+  max-width: none !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .container.full-screen {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container:not(.full-screen) {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 1239px) {
+  .container.tablet-small-max {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .container:not(.full-screen) {
+    max-width: 1280px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .container.tablet-wide-max {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1399px) {
+  .container.tablet-wide-only {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container:not(.con-full) {
+    max-width: 1350px;
+  }
+
+  .container.desktop-min {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .container.tablet-wide-min {
+    max-width: 100%;
+  }
+}
+/**
+ * ! row and col css starts
+ */
+.row.row-mobile {
+  display: flex;
+}
+
+.row.row-wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.col.col-1 {
+  flex: none;
+  width: calc(100% * (1/ 12));
+}
+
+.col.col-2 {
+  flex: none;
+  width: calc(100% * (2/ 12));
+}
+
+.col.col-3 {
+  flex: none;
+  width: calc(100% * (3/ 12));
+}
+
+.col.col-4 {
+  flex: none;
+  width: calc(100% * (4/ 12));
+}
+
+.col.col-5 {
+  flex: none;
+  width: calc(100% * (5/ 12));
+}
+
+.col.col-6 {
+  flex: none;
+  width: calc(100% * (6/ 12));
+}
+
+.col.col-7 {
+  flex: none;
+  width: calc(100% * (7/ 12));
+}
+
+.col.col-8 {
+  flex: none;
+  width: calc(100% * (8/ 12));
+}
+
+.col.col-9 {
+  flex: none;
+  width: calc(100% * (9/ 12));
+}
+
+.col.col-10 {
+  flex: none;
+  width: calc(100% * (10/ 12));
+}
+
+.col.col-11 {
+  flex: none;
+  width: calc(100% * (11/ 12));
+}
+
+.col.col-12 {
+  flex: none;
+  width: calc(100% * (12/ 12));
+}
+
+.col.col-quarter {
+  flex: none;
+  width: 25%;
+}
+
+.col.col-half {
+  flex: none;
+  width: 50%;
+}
+
+.col.col-three-quarter {
+  flex: none;
+  width: 75%;
+}
+
+.col.col-full {
+  flex: none;
+  width: 100%;
+}
+
+.col.col-one-fifth {
+  flex: none;
+  width: 20%;
+}
+
+.col.col-two-fifth {
+  flex: none;
+  width: 40%;
+}
+
+.col.col-three-fifth {
+  flex: none;
+  width: 60%;
+}
+
+.col.col-four-fifth {
+  flex: none;
+  width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  .row:not(.row-mobile) {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .row:not(.row-mobile) .col {
+    width: 100%;
+  }
+}
+/**
+ * ! row and col css ends
+ */
+/**
+ * ! Margins and Padding css start
+ * ? SIDES
+ * * -l:(left)
+ * * -r:(right)
+ * * -t:(top)
+ * * -b:(bottom)
+ * ? SIZES
+ * * auto 
+ * * 0rem - 0.25rem - 0.50rem - 0.75rem
+ * * 1rem - 1.25rem - 1.50rem - 1.75rem
+ * * 2rem - 2.25rem - 2.50rem - 2.75rem
+ * * 3rem 
+ * * 4rem 
+ * * 5rem 
+ */
+.m-auto {
+  margin: auto;
+}
+
+.m-0 {
+  margin: 0rem;
+}
+
+.m-25 {
+  margin: 0.25rem;
+}
+
+.m-50 {
+  margin: 0.5rem;
+}
+
+.m-75 {
+  margin: 0.75rem;
+}
+
+.m-100 {
+  margin: 1rem;
+}
+
+.m-125 {
+  margin: 1.25rem;
+}
+
+.m-150 {
+  margin: 1.5rem;
+}
+
+.m-175 {
+  margin: 1.75rem;
+}
+
+.m-200 {
+  margin: 2rem;
+}
+
+.m-225 {
+  margin: 2.25rem;
+}
+
+.m-250 {
+  margin: 2.5rem;
+}
+
+.m-275 {
+  margin: 2.75rem;
+}
+
+.m-300 {
+  margin: 3rem;
+}
+
+.m-400 {
+  margin: 4rem;
+}
+
+.m-500 {
+  margin: 5rem;
+}
+
+.m-auto-l {
+  margin-left: auto;
+}
+
+.m-auto-r {
+  margin-right: auto;
+}
+
+.m-auto-t {
+  margin-top: auto;
+}
+
+.m-auto-b {
+  margin-bottom: auto;
+}
+
+.m-0-l {
+  margin-left: 0rem;
+}
+
+.m-0-r {
+  margin-right: 0rem;
+}
+
+.m-0-t {
+  margin-top: 0rem;
+}
+
+.m-0-b {
+  margin-bottom: 0rem;
+}
+
+.m-25-l {
+  margin-left: 0.25rem;
+}
+
+.m-25-r {
+  margin-right: 0.25rem;
+}
+
+.m-25-t {
+  margin-top: 0.25rem;
+}
+
+.m-25-b {
+  margin-bottom: 0.25rem;
+}
+
+.m-50-l {
+  margin-left: 0.5rem;
+}
+
+.m-50-r {
+  margin-right: 0.5rem;
+}
+
+.m-50-t {
+  margin-top: 0.5rem;
+}
+
+.m-50-b {
+  margin-bottom: 0.5rem;
+}
+
+.m-75-l {
+  margin-left: 0.75rem;
+}
+
+.m-75-r {
+  margin-right: 0.75rem;
+}
+
+.m-75-t {
+  margin-top: 0.75rem;
+}
+
+.m-75-b {
+  margin-bottom: 0.75rem;
+}
+
+.m-100-l {
+  margin-left: 1rem;
+}
+
+.m-100-r {
+  margin-right: 1rem;
+}
+
+.m-100-t {
+  margin-top: 1rem;
+}
+
+.m-100-b {
+  margin-bottom: 1rem;
+}
+
+.m-125-l {
+  margin-left: 1.25rem;
+}
+
+.m-125-r {
+  margin-right: 1.25rem;
+}
+
+.m-125-t {
+  margin-top: 1.25rem;
+}
+
+.m-125-b {
+  margin-bottom: 1.25rem;
+}
+
+.m-150-l {
+  margin-left: 1.5rem;
+}
+
+.m-150-r {
+  margin-right: 1.5rem;
+}
+
+.m-150-t {
+  margin-top: 1.5rem;
+}
+
+.m-150-b {
+  margin-bottom: 1.5rem;
+}
+
+.m-175-l {
+  margin-left: 1.75rem;
+}
+
+.m-175-r {
+  margin-right: 1.75rem;
+}
+
+.m-175-t {
+  margin-top: 1.75rem;
+}
+
+.m-175-b {
+  margin-bottom: 1.75rem;
+}
+
+.m-200-l {
+  margin-left: 2rem;
+}
+
+.m-200-r {
+  margin-right: 2rem;
+}
+
+.m-200-t {
+  margin-top: 2rem;
+}
+
+.m-200-b {
+  margin-bottom: 2rem;
+}
+
+.m-225-l {
+  margin-left: 2.25rem;
+}
+
+.m-225-r {
+  margin-right: 2.25rem;
+}
+
+.m-225-t {
+  margin-top: 2.25rem;
+}
+
+.m-225-b {
+  margin-bottom: 2.25rem;
+}
+
+.m-250-l {
+  margin-left: 2.5rem;
+}
+
+.m-250-r {
+  margin-right: 2.5rem;
+}
+
+.m-250-t {
+  margin-top: 2.5rem;
+}
+
+.m-250-b {
+  margin-bottom: 2.5rem;
+}
+
+.m-275-l {
+  margin-left: 2.75rem;
+}
+
+.m-275-r {
+  margin-right: 2.75rem;
+}
+
+.m-275-t {
+  margin-top: 2.75rem;
+}
+
+.m-275-b {
+  margin-bottom: 2.75rem;
+}
+
+.m-300-l {
+  margin-left: 3rem;
+}
+
+.m-300-r {
+  margin-right: 3rem;
+}
+
+.m-300-t {
+  margin-top: 3rem;
+}
+
+.m-300-b {
+  margin-bottom: 3rem;
+}
+
+.m-400-l {
+  margin-left: 4rem;
+}
+
+.m-400-r {
+  margin-right: 4rem;
+}
+
+.m-400-t {
+  margin-top: 4rem;
+}
+
+.m-400-b {
+  margin-bottom: 4rem;
+}
+
+.m-500-l {
+  margin-left: 5rem;
+}
+
+.m-500-r {
+  margin-right: 5rem;
+}
+
+.m-500-t {
+  margin-top: 5rem;
+}
+
+.m-500-b {
+  margin-bottom: 5rem;
+}
+
+.m-auto-tb {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.m-0-tb {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.m-25-tb {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.m-50-tb {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.m-75-tb {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.m-100-tb {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-125-tb {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.m-150-tb {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.m-175-tb {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.m-200-tb {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.m-225-tb {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.m-250-tb {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.m-275-tb {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.m-300-tb {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.m-400-tb {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.m-500-tb {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.m-auto-lr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-0-lr {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.m-25-lr {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.m-50-lr {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.m-75-lr {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.m-100-lr {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.m-125-lr {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.m-150-lr {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.m-175-lr {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+.m-200-lr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.m-225-lr {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.m-250-lr {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.m-275-lr {
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
+}
+
+.m-300-lr {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.m-400-lr {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.m-500-lr {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.p-auto {
+  padding: auto;
+}
+
+.p-0 {
+  padding: 0rem;
+}
+
+.p-25 {
+  padding: 0.25rem;
+}
+
+.p-50 {
+  padding: 0.5rem;
+}
+
+.p-75 {
+  padding: 0.75rem;
+}
+
+.p-100 {
+  padding: 1rem;
+}
+
+.p-125 {
+  padding: 1.25rem;
+}
+
+.p-150 {
+  padding: 1.5rem;
+}
+
+.p-175 {
+  padding: 1.75rem;
+}
+
+.p-200 {
+  padding: 2rem;
+}
+
+.p-225 {
+  padding: 2.25rem;
+}
+
+.p-250 {
+  padding: 2.5rem;
+}
+
+.p-275 {
+  padding: 2.75rem;
+}
+
+.p-300 {
+  padding: 3rem;
+}
+
+.p-400 {
+  padding: 4rem;
+}
+
+.p-500 {
+  padding: 5rem;
+}
+
+.p-auto-l {
+  padding-left: auto;
+}
+
+.p-auto-r {
+  padding-right: auto;
+}
+
+.p-auto-t {
+  padding-top: auto;
+}
+
+.p-auto-b {
+  padding-bottom: auto;
+}
+
+.p-0-l {
+  padding-left: 0rem;
+}
+
+.p-0-r {
+  padding-right: 0rem;
+}
+
+.p-0-t {
+  padding-top: 0rem;
+}
+
+.p-0-b {
+  padding-bottom: 0rem;
+}
+
+.p-25-l {
+  padding-left: 0.25rem;
+}
+
+.p-25-r {
+  padding-right: 0.25rem;
+}
+
+.p-25-t {
+  padding-top: 0.25rem;
+}
+
+.p-25-b {
+  padding-bottom: 0.25rem;
+}
+
+.p-50-l {
+  padding-left: 0.5rem;
+}
+
+.p-50-r {
+  padding-right: 0.5rem;
+}
+
+.p-50-t {
+  padding-top: 0.5rem;
+}
+
+.p-50-b {
+  padding-bottom: 0.5rem;
+}
+
+.p-75-l {
+  padding-left: 0.75rem;
+}
+
+.p-75-r {
+  padding-right: 0.75rem;
+}
+
+.p-75-t {
+  padding-top: 0.75rem;
+}
+
+.p-75-b {
+  padding-bottom: 0.75rem;
+}
+
+.p-100-l {
+  padding-left: 1rem;
+}
+
+.p-100-r {
+  padding-right: 1rem;
+}
+
+.p-100-t {
+  padding-top: 1rem;
+}
+
+.p-100-b {
+  padding-bottom: 1rem;
+}
+
+.p-125-l {
+  padding-left: 1.25rem;
+}
+
+.p-125-r {
+  padding-right: 1.25rem;
+}
+
+.p-125-t {
+  padding-top: 1.25rem;
+}
+
+.p-125-b {
+  padding-bottom: 1.25rem;
+}
+
+.p-150-l {
+  padding-left: 1.5rem;
+}
+
+.p-150-r {
+  padding-right: 1.5rem;
+}
+
+.p-150-t {
+  padding-top: 1.5rem;
+}
+
+.p-150-b {
+  padding-bottom: 1.5rem;
+}
+
+.p-175-l {
+  padding-left: 1.75rem;
+}
+
+.p-175-r {
+  padding-right: 1.75rem;
+}
+
+.p-175-t {
+  padding-top: 1.75rem;
+}
+
+.p-175-b {
+  padding-bottom: 1.75rem;
+}
+
+.p-200-l {
+  padding-left: 2rem;
+}
+
+.p-200-r {
+  padding-right: 2rem;
+}
+
+.p-200-t {
+  padding-top: 2rem;
+}
+
+.p-200-b {
+  padding-bottom: 2rem;
+}
+
+.p-225-l {
+  padding-left: 2.25rem;
+}
+
+.p-225-r {
+  padding-right: 2.25rem;
+}
+
+.p-225-t {
+  padding-top: 2.25rem;
+}
+
+.p-225-b {
+  padding-bottom: 2.25rem;
+}
+
+.p-250-l {
+  padding-left: 2.5rem;
+}
+
+.p-250-r {
+  padding-right: 2.5rem;
+}
+
+.p-250-t {
+  padding-top: 2.5rem;
+}
+
+.p-250-b {
+  padding-bottom: 2.5rem;
+}
+
+.p-275-l {
+  padding-left: 2.75rem;
+}
+
+.p-275-r {
+  padding-right: 2.75rem;
+}
+
+.p-275-t {
+  padding-top: 2.75rem;
+}
+
+.p-275-b {
+  padding-bottom: 2.75rem;
+}
+
+.p-300-l {
+  padding-left: 3rem;
+}
+
+.p-300-r {
+  padding-right: 3rem;
+}
+
+.p-300-t {
+  padding-top: 3rem;
+}
+
+.p-300-b {
+  padding-bottom: 3rem;
+}
+
+.p-400-l {
+  padding-left: 4rem;
+}
+
+.p-400-r {
+  padding-right: 4rem;
+}
+
+.p-400-t {
+  padding-top: 4rem;
+}
+
+.p-400-b {
+  padding-bottom: 4rem;
+}
+
+.p-500-l {
+  padding-left: 5rem;
+}
+
+.p-500-r {
+  padding-right: 5rem;
+}
+
+.p-500-t {
+  padding-top: 5rem;
+}
+
+.p-500-b {
+  padding-bottom: 5rem;
+}
+
+.p-auto-tb {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.p-0-tb {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.p-25-tb {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.p-50-tb {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-75-tb {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.p-100-tb {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.p-125-tb {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.p-150-tb {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.p-175-tb {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.p-200-tb {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-225-tb {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.p-250-tb {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.p-275-tb {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.p-300-tb {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.p-400-tb {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.p-500-tb {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.p-auto-lr {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.p-0-lr {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.p-25-lr {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.p-50-lr {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.p-75-lr {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.p-100-lr {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.p-125-lr {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.p-150-lr {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.p-175-lr {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.p-200-lr {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p-225-lr {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.p-250-lr {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.p-275-lr {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.p-300-lr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.p-400-lr {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.p-500-lr {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/**
+ * ! Margins and Padding css ends
+ */
+/**
+  * ! table Properties start
+  */
+.table {
+  border-collapse: collapse;
+}
+
+.table.table-fullwidth {
+  width: 100%;
+}
+
+.table.p-auto td,
+.table.p-auto th {
+  padding: auto;
+}
+
+.table.p-auto-l td,
+.table.p-auto-l th {
+  padding-left: auto;
+}
+
+.table.p-auto-r td,
+.table.p-auto-r th {
+  padding-right: auto;
+}
+
+.table.p-auto-t td,
+.table.p-auto-t th {
+  padding-top: auto;
+}
+
+.table.p-auto-b td,
+.table.p-auto-b th {
+  padding-bottom: auto;
+}
+
+.table.p-auto-tb td,
+.table.p-auto-tb th {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.table.p-auto-lr td,
+.table.p-auto-lr th {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.table.p-25 td,
+.table.p-25 th {
+  padding: 0.25rem;
+}
+
+.table.p-25-l td,
+.table.p-25-l th {
+  padding-left: 0.25rem;
+}
+
+.table.p-25-r td,
+.table.p-25-r th {
+  padding-right: 0.25rem;
+}
+
+.table.p-25-t td,
+.table.p-25-t th {
+  padding-top: 0.25rem;
+}
+
+.table.p-25-b td,
+.table.p-25-b th {
+  padding-bottom: 0.25rem;
+}
+
+.table.p-25-tb td,
+.table.p-25-tb th {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.table.p-25-lr td,
+.table.p-25-lr th {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.table.p-50 td,
+.table.p-50 th {
+  padding: 0.5rem;
+}
+
+.table.p-50-l td,
+.table.p-50-l th {
+  padding-left: 0.5rem;
+}
+
+.table.p-50-r td,
+.table.p-50-r th {
+  padding-right: 0.5rem;
+}
+
+.table.p-50-t td,
+.table.p-50-t th {
+  padding-top: 0.5rem;
+}
+
+.table.p-50-b td,
+.table.p-50-b th {
+  padding-bottom: 0.5rem;
+}
+
+.table.p-50-tb td,
+.table.p-50-tb th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.table.p-50-lr td,
+.table.p-50-lr th {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.table.p-75 td,
+.table.p-75 th {
+  padding: 0.75rem;
+}
+
+.table.p-75-l td,
+.table.p-75-l th {
+  padding-left: 0.75rem;
+}
+
+.table.p-75-r td,
+.table.p-75-r th {
+  padding-right: 0.75rem;
+}
+
+.table.p-75-t td,
+.table.p-75-t th {
+  padding-top: 0.75rem;
+}
+
+.table.p-75-b td,
+.table.p-75-b th {
+  padding-bottom: 0.75rem;
+}
+
+.table.p-75-tb td,
+.table.p-75-tb th {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.table.p-75-lr td,
+.table.p-75-lr th {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.table.p-100 td,
+.table.p-100 th {
+  padding: 1rem;
+}
+
+.table.p-100-l td,
+.table.p-100-l th {
+  padding-left: 1rem;
+}
+
+.table.p-100-r td,
+.table.p-100-r th {
+  padding-right: 1rem;
+}
+
+.table.p-100-t td,
+.table.p-100-t th {
+  padding-top: 1rem;
+}
+
+.table.p-100-b td,
+.table.p-100-b th {
+  padding-bottom: 1rem;
+}
+
+.table.p-100-tb td,
+.table.p-100-tb th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.table.p-100-lr td,
+.table.p-100-lr th {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.table.table-border-full td,
+.table.table-border-full th {
+  border: 1px solid #a0a0a0;
+}
+
+.table.table-border-l {
+  border-left: 1px solid #a0a0a0;
+}
+
+.table.table-border-r {
+  border-right: 1px solid #a0a0a0;
+}
+
+.table.table-border-t {
+  border-top: 1px solid #a0a0a0;
+}
+
+.table.table-border-b {
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.table.table-border {
+  border: 1px solid #a0a0a0;
+}
+
+.table.table-border-tb {
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.table.table-border-lr {
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+
+/**
+    * ! table Properties ends
+    */
+
+/*# sourceMappingURL=asuna-skeleton.css.map */
