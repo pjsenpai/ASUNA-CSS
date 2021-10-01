@@ -1,0 +1,72 @@
+
+// container start
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  flex-grow: 1;
+}
+
+.container.full-screen {
+  max-width: none !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+}
+
+// mobile screen types max and below
+@media screen and (max-width: 1023px) {
+  .container.full-screen {
+    padding: 0px;
+  }
+}
+
+//tablet-small screen min and above
+@media screen and (min-width: 1024px) {
+  .container:not(.full-screen) {
+    max-width: 960px;
+  }
+}
+//tablet-small screen max and below
+@media screen and (max-width: 1239px) {
+  .container.tablet-small-max {
+    min-width: 100%;
+  }
+}
+//tablet-wide screen min and above
+@media screen and (min-width: 1240px) {
+  .container:not(.full-screen) {
+    max-width: 1280px;
+  }
+}
+//tablet-small screen max and below
+@media screen and (max-width: 1399px) {
+  .container.tablet-wide-max {
+    min-width: 100%;
+  }
+}
+//tablet-small in between
+@media screen and (min-width: 1240px) and (max-width: 1399px) {
+  .container.tablet-wide-only {
+    max-width: 100%;
+  }
+}
+
+//desktops and wide screens(1920 x 1080) min and above
+@media screen and (min-width: 1400px) {
+  .container:not(.con-full) {
+    max-width: 1350px;
+  }
+  .container.desktop-min {
+    max-width: 100%;
+  }
+}
+//tablet-wide min and above
+@media screen and (min-width: 1240px) {
+  .container.tablet-wide-min {
+    max-width: 100%;
+  }
+}
+
+//container ends

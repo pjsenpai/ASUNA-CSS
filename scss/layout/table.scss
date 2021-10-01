@@ -1,0 +1,90 @@
+/**
+  * ! table Properties start
+  */
+
+.table {
+  border-collapse: collapse;
+}
+
+.table.table-fullwidth {
+  width: 100%;
+}
+
+$sides: (
+  "left": "l",
+  "right": "r",
+  "top": "t",
+  "bottom": "b",
+);
+
+//table column and text spacing values
+
+$padding-sizes: (
+  "auto": auto,
+  "25": 0.25rem,
+  "50": 0.5rem,
+  "75": 0.75rem,
+  "100": 1rem,
+);
+
+@each $padding-size-key, $padding-size-val in $padding-sizes {
+  .table.p-#{$padding-size-key} {
+    td,
+    th {
+      padding: $padding-size-val;
+    }
+  }
+  @each $side-key, $side-val in $sides {
+    .table.p-#{$padding-size-key}-#{$side-val} {
+      td,
+      th {
+        padding-#{$side-key}: $padding-size-val;
+      }
+    }
+  }
+
+  .table.p-#{$padding-size-key}-tb {
+    td,
+    th {
+      padding-top: $padding-size-val;
+      padding-bottom: $padding-size-val;
+    }
+  }
+
+  .table.p-#{$padding-size-key}-lr {
+    td,
+    th {
+      padding-left: $padding-size-val;
+      padding-right: $padding-size-val;
+    }
+  }
+}
+
+.table.table-border-full {
+  td,
+  th {
+    border: 1px solid $border-color;
+  }
+}
+
+//table outer borders
+@each $side-key, $side-val in $sides {
+  .table.table-border-#{$side-val} {
+    border-#{$side-key}: 1px solid $border-color;
+  }
+}
+.table.table-border {
+  border: 1px solid $border-color;
+}
+.table.table-border-tb {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+.table.table-border-lr {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+
+/**
+    * ! table Properties ends
+    */

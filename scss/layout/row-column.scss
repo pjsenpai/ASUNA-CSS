@@ -1,0 +1,74 @@
+/**
+ * ! row and col css starts
+ */
+
+//for mobile to show columns like desktop
+.row.row-mobile {
+  display: flex;
+}
+// to wrap columns to next line automatically
+.row.row-wrap {
+  flex-wrap: wrap;
+}
+
+// column flex properties
+.col {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+@for $colnum from 1 through 12 {
+  .col.col-#{$colnum} {
+    flex: none;
+    width: calc(100% * (#{$colnum}/ 12));
+  }
+}
+// above will give col 1-12 grid
+
+$multi-of25: (
+  "quarter": 25%,
+  "half": 50%,
+  "three-quarter": 75%,
+  "full": 100%,
+);
+
+@each $multi-of25-key, $multi-of25-val in $multi-of25 {
+  .col.col-#{$multi-of25-key} {
+    flex: none;
+    width: #{$multi-of25-val};
+  }
+}
+
+$multi-of20: (
+  "one-fifth": 20%,
+  "two-fifth": 40%,
+  "three-fifth": 60%,
+  "four-fifth": 80%,
+);
+
+@each $multi-of20-key, $multi-of20-val in $multi-of20 {
+  .col.col-#{$multi-of20-key} {
+    flex: none;
+    width: #{$multi-of20-val};
+  }
+}
+
+// rows and col will be of flex type for divices larger than mobile screens
+@media screen and (min-width: 1024px) {
+  .row:not(.row-mobile) {
+    display: flex;
+  }
+}
+
+// columns with defined width will overwrite here by width 100% if .row-mobile is not given
+@media screen and (max-width: 1023px) {
+  .row:not(.row-mobile) {
+    .col {
+      width: 100%;
+    }
+  }
+}
+/**
+ * ! row and col css ends
+ */
