@@ -10,7 +10,7 @@
 
 .
 
-# first public build version (i.e asuna skeleton) will be available by 8th of nevember 2021 via cdn and as npm package
+# first public build version (i.e asuna skeleton) will be available by jan 2022 via cdn and as npm package
 
 .
 
